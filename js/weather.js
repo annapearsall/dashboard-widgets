@@ -26,7 +26,7 @@ fetch(url)
   var sunriseHours = sunriseDate.getHours();
   var sunriseMinutes = "0" + sunriseDate.getMinutes();
   const sunriseGotAmOrPM = sunriseHours >= 12 ? 'PM' : 'AM';
-  var sunriseFormattedTime = sunriseHours + ' : ' + sunriseMinutes.substr(-2) + ' ' + sunriseGotAmOrPM;
+  var sunriseFormattedTime = sunriseHours + ':' + sunriseMinutes.substr(-2) + ' ' + sunriseGotAmOrPM;
 
   // convert sunset unix timestamp to normal time format
   let sunsetUnix = `${data.sys.sunset}`;
@@ -35,7 +35,7 @@ fetch(url)
   var sunsetHours = sunsetDate.getHours();
   var sunsetMinutes = "0" + sunsetDate.getMinutes();
   const sunsetGotAmOrPM = sunsetHours >= 12 ? 'PM' : 'AM';
-  var sunsetFormattedTime = sunsetHours + ' : ' + sunsetMinutes.substr(-2) + ' ' + sunsetGotAmOrPM;
+  var sunsetFormattedTime = sunsetHours + ':' + sunsetMinutes.substr(-2) + ' ' + sunsetGotAmOrPM;
 
 console.log(sunriseFormattedTime);
   // Template to output
