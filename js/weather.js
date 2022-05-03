@@ -41,9 +41,9 @@ console.log(sunriseFormattedTime);
   // Template to output
   const template = `
     <h1>Weather</h1>
-    <data value="${data.name}" class="city">${data.name}</data>
-    <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Placeholder">
+    <data value="${data.name}" class="city">${data.name}</data> <br>
     <data value="${data.main.temp}" class="temp">${data.main.temp}&#8457;</data> <br>
+    <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Placeholder"><br>
     <data value="${data.sys.sunrise}" class="sunrise">Sunrise at ${sunriseFormattedTime}</data> <br>
     <data value="${data.sys.sunset}" class="sunset">Sunset at ${sunsetFormattedTime}</data>
   `;
