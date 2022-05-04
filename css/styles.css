@@ -31,6 +31,14 @@ body {
   border-radius: 15px;
   height: 475px;
   width: 215px;
+  font-family: 'PT Mono', monospace;
+  font-size: 30px;
+  line-height: 46px;
+}
+
+h1 {
+  font-size: 1.25em;
+  margin-top: 8px;
 }
 
 .date { 
